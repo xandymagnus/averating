@@ -1,10 +1,16 @@
-	Projeto Calculadora
+# Calculator Project
 
-Fluxo usuário:
+## User flow:
 
-- Escolhe tipo de avaliação (2 por enquanto)
-- Coloca nota nos tópicos
-- Clica no botão para calcular
-- Recebe média
+- Selects assessment type (2 options for now)
+- Enters scores for the topics
+- Clicks the calculate button
+- Receives the average
 
-Fluxo do sistema:
+## System flow:
+
+- Loads the initial screen
+- Displays 2 options (Detailed score or standard score)
+- Receives scores
+- Calculates the average
+- Displays the average
