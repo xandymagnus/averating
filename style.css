@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    height: 100vh;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.reviews {
+    display: flex;
+    gap: 10rem;
+}
+
+button {
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 0.6rem 5rem;
+}
+
