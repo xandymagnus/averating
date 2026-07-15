@@ -2,10 +2,6 @@ body {
     background-color: gray;
 }
 
-.hidden {
-    display: none;
-}
-
 .container {
     display: flex;
     height: 100vh;  
@@ -26,9 +22,13 @@ body {
     gap: 10rem;
 }
 
-button {
+.btn_default, .btn_advanced {
     border-radius: 1rem;
     font-size: 2rem;
     padding: 0.6rem 5rem;
+}
+
+.hidden {
+    display: none;
 }
 
