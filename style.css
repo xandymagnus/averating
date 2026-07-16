@@ -2,6 +2,8 @@ body {
     background-color: gray;
 }
 
+/* Home Page */
+
 .container {
     display: flex;
     height: 100vh;  
@@ -27,6 +29,12 @@ body {
     font-size: 2rem;
     padding: 0.6rem 5rem;
 }
+
+/* DEFAULT PAGE */
+
+
+
+/* ADVANCED PAGE */
 
 .hidden {
     display: none;
