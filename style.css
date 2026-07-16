@@ -24,7 +24,7 @@ body {
     gap: 10rem;
 }
 
-.btn_default, .btn_advanced {
+.btn-default, .btn-advanced {
     border-radius: 1rem;
     font-size: 2rem;
     padding: 0.6rem 5rem;
