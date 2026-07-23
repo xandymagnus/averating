@@ -52,4 +52,5 @@ form.addEventListener("submit", (event) => {
     const result = currentPage.querySelector(".result");
 
     result.textContent = average;
+    form.reset();
 });
