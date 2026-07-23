@@ -11,6 +11,8 @@ const btnAdvanced = document.querySelector(".btn-advanced");
 const btnCalculate = document.querySelector(".btn-calculator");
 const btnBack = document.querySelectorAll(".btn-back");
 // GET INPUTS
+// FORMS
+const form = document.getElementById("form");
 
 // DEFAULT DISPLAY
 btnDefault.addEventListener("click", () => {
@@ -31,5 +33,23 @@ btnAdvanced.addEventListener("click", () => {
     btn.addEventListener("click", () => {
         currentPage.classList.toggle("hidden");
         homePage.classList.toggle("hidden");
+        currentPage = homePage;
     });
+});
+
+// FORM
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const inputs = currentPage.querySelectorAll(".input-categories");
+    let sum = 0;
+
+    inputs.forEach((input) => {
+        sum += Number(input.value);
+    });
+
+    const average = sum / inputs.length;
+    const result = currentPage.querySelector(".result");
+
+    result.textContent = average;
 });
