@@ -24,14 +24,17 @@
         <section id="default-page" class="hidden">
             <h1>Default Rating</h1>
 
-            <input type="number" placeholder="Animation">
-            <input type="number" placeholder="Story">
-            <input type="number" placeholder="Characters">
-            <input type="number" placeholder="Ambient">
-            <input type="number" placeholder="Climax">
-
-            <button class="btn-back">Back</button>
-            <button class="btn-calculate">Calculate</button>
+            <form id="form">
+                <input type="number" min="1" step="any" max="10" placeholder="Animation" class="input-categories" required>
+                <input type="number" min="1" step="any" max="10"  placeholder="Story" class="input-categories" required>
+                <input type="number" min="1" step="any" max="10"  placeholder="Characters" class="input-categories" required>
+                <input type="number" min="1" step="any" max="10"  placeholder="Ambient" class="input-categories" required>
+                <input type="number" min="1" step="any" max="10"  placeholder="Climax" class="input-categories" required>
+    
+                <button class="btn-back" type="click">Back</button>
+                <button class="btn-calculate" type="submit">Calculate</button>
+            </form>
+            <p class="result"></p>
         </section>
 
         <!-- ADVANCED PAGE -->
@@ -40,7 +43,7 @@
 
             <input type="number" placeholder="Animation">
 
-            <button class="btn-back">Back</button>
+            <button class="btn-back" type="click">Back</button>
             <button class="btn-calculate">Calculate</button>
         </section>
     </main>
