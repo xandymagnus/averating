@@ -2,7 +2,7 @@ body {
     background-color: gray;
 }
 
-/* Home Page */
+/* HOME PAGE */
 
 .container {
     display: flex;
@@ -25,14 +25,59 @@ body {
 }
 
 .btn-default, .btn-advanced {
+    border: 0;
     border-radius: 1rem;
     font-size: 2rem;
     padding: 0.6rem 5rem;
 }
 
 /* DEFAULT PAGE */
+.current-page {
+    display: flex;
+    height: 100vh;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
+.current-page h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
 
+#form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.input-categories {
+    border: 0;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+    gap: 1rem;
+}
+
+.input-categories::placeholder {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.current-page button {
+    border: 0;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.result {
+    font-size: 1.7rem;
+}
 
 /* ADVANCED PAGE */
 
