@@ -51,6 +51,6 @@ form.addEventListener("submit", (event) => {
     const average = sum / inputs.length;
     const result = currentPage.querySelector(".result");
 
-    result.textContent = average;
+    result.textContent = average.toFixed(2);
     form.reset();
 });
