@@ -12,7 +12,7 @@ const btnCalculate = document.querySelector(".btn-calculator");
 const btnBack = document.querySelectorAll(".btn-back");
 // GET INPUTS
 // FORMS
-const form = document.getElementById("form");
+const form = document.querySelectorAll(".form");
 
 // DEFAULT DISPLAY
 btnDefault.addEventListener("click", () => {
@@ -38,19 +38,21 @@ btnAdvanced.addEventListener("click", () => {
 });
 
 // FORM
-form.addEventListener("submit", (event) => {
+[...form].forEach(forms => {
+    forms.addEventListener("submit", (event) => {
     event.preventDefault();
-
+    
     const inputs = currentPage.querySelectorAll(".input-categories");
     let sum = 0;
-
+    
     inputs.forEach((input) => {
         sum += Number(input.value);
     });
-
+    
     const average = sum / inputs.length;
     const result = currentPage.querySelector(".result");
-
+    
     result.textContent = average.toFixed(2);
-    form.reset();
+    forms.reset();
+    });
 });
