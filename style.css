@@ -18,15 +18,10 @@ h1 {
     color: var(--text-color);
 }
 
-h2 {
-    font-size: 5rem;
-    color: var(--text-color);
-}
-
 /* HOME PAGE */
 .container {
     display: flex;
-    height: 100vh;  
+    min-height: 100vh;  
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -88,7 +83,7 @@ h2 {
 /* DEFAULT PAGE */
 .current-page {
     display: flex;
-    height: 100vh;  
+    min-height: 100vh;  
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -103,10 +98,12 @@ h2 {
 
 .form {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .input-categories {
@@ -160,6 +157,23 @@ h2 {
 }
 
 /* ADVANCED PAGE */
+.align-topic {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.align-topic input{
+    margin: 0.3rem;
+}
+
+.topic {
+    align-self: center;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+/* PAGE MANAGEMENT */
 .hidden {
     display: none;
 }
