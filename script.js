@@ -52,7 +52,14 @@ btnAdvanced.addEventListener("click", () => {
     const average = sum / inputs.length;
     const result = currentPage.querySelector(".result");
     
-    result.textContent = average.toFixed(2);
+    textBtNote = {
+        1: "Horrible", 2: "Terrible", 3: "Very Bad", 4: "Bad", 5: "Normal", 6: "Cool", 7: "Good", 8: "Very Good", 9: "Excellent", 10: "Masterpiece"
+    };
+
+    const ratingKey = Math.round(average);
+    const label = textBtNote[ratingKey] || "Unknown";
+
+    result.textContent = `${average.toFixed(2)} - ${label}`;
     forms.reset();
     });
 });
