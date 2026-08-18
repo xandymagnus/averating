@@ -157,20 +157,31 @@ h1 {
 }
 
 /* ADVANCED PAGE */
-.align-topic {
+#advanced-page .form {
     display: flex;
-
     flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 500px;
 }
 
-.align-topic input{
-    margin: 0.3rem;
+.align-topic {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+.align-topic input {
+    margin: 0.3rem 0;
 }
 
 .topic {
     align-self: center;
     font-size: 2rem;
     color: var(--text-color);
+    margin-bottom: 0.5rem;
 }
 
 /* PAGE MANAGEMENT */
